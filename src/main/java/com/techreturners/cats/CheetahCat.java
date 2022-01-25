@@ -1,19 +1,12 @@
 package com.techreturners.cats;
 
 public class CheetahCat extends Animal implements Cat {
+    public CheetahCat() {
+        super(50,"Zzzzzzz");
+    }
 
     @Override
     public String getSetting() {
         return AnimalType.wild.toString();
-    }
-
-    @Override
-    public int getAverageHeight() {
-        return 50;
-    }
-
-    @Override
-    public String eat() {
-        return "Zzzzzzz";
     }
 }
